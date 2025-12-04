@@ -1,0 +1,100 @@
+body {
+  font-family: "Inter", sans-serif;
+  color:#333;
+  box-sizing: border-box;
+  background-color: #fff;
+  background-size: cover;
+  background-attachment: #fff;
+}
+
+/* ===== NAVBAR ===== */
+nav {
+  background:#2d6cdf;
+  padding:16px 40px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  color:#fff;
+  position:sticky;
+  top:0;
+  z-index:50;
+}
+nav .brand {font-size:20px; font-weight:700;}
+nav a {
+  color:#fff;
+  text-decoration:none;
+  margin-left:24px;
+  font-weight:600;
+  transition:0.3s;
+}
+nav a:hover {opacity:0.7;}
+
+/* ===== JUMBOTRON ===== */
+.jumbotron {
+  background: url("background1.webp") no-repeat center center fixed ;
+  color:#fff;
+  padding:80px 20px;
+  text-align:center;
+}
+.jumbotron img {
+  color:#fff;
+  width:120px;
+  height:120px;
+  border-radius:50%;
+  border:4px solid #2d6cdf;
+  object-fit:cover;
+}
+.jumbotron h1 {margin-top:20px; font-size:32px;}
+.jumbotron p {color:#555; margin-top:6px;}
+
+/* ===== CONTENT ===== */
+section {padding:50px 20px; text-align:center;}
+.container {max-width:900px; margin:auto;}
+
+.row {
+  display:flex;
+  justify-content:space-between;
+  gap:30px;
+  margin-top:20px;
+}
+.column {
+  width:50%;
+  text-align:left;
+  color:#555;
+  font-size:15px;
+}
+
+h2 {font-size:26px; margin-bottom:10px;}
+
+/* ===== PROJECTS ===== */
+.projects {margin-top:40px;}
+.project-card {
+  background:#fff;
+  padding:20px;
+  border-radius:10px;
+  box-shadow:0 2px 8px rgba(0,0,0,0.1);
+  margin-top:20px;
+  transition:0.3s;
+}
+.project-card:hover {
+  transform:translateY(-6px);
+}
+
+/* ===== FOOTER ===== */
+footer {
+  margin-top:40px;
+  padding:20px;
+  background:#eee;
+  text-align:center;
+  color:#555;
+}
+
+/* ===== ANIMATIONS ===== */
+.fade-in {opacity:0; transform:translateY(20px); animation:fadeIn 1s ease forwards;}
+.delay-1 {animation-delay:0.3s;}
+.delay-2 {animation-delay:0.6s;}
+.delay-3 {animation-delay:0.9s;}
+
+@keyframes fadeIn {
+  to {opacity:1; transform:translateY(0);}
+}
